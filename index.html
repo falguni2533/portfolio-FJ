@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Falguni Jain — Full-Stack Developer &amp; UI/UX Enthusiast</title>
+<meta name="description" content="Portfolio of Falguni Jain, Computer Science student at GLA University, building with React, Node and a designer's eye.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<!-- NAV -->
+<header class="nav" id="top">
+  <a href="#top" class="nav__mark">FJ<span class="nav__dot">.</span></a>
+  <nav class="nav__links">
+    <a href="#about">About</a>
+    <a href="#journey">Journey</a>
+    <a href="#work">Work</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="mode-toggle" id="modeToggle" aria-label="Toggle light and dark mode" title="Toggle light / dark — built the same way as my Light/Dark Mode project">
+    <span class="mode-toggle__track">
+      <span class="mode-toggle__thumb"></span>
+    </span>
+  </button>
+  <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about">About</a>
+  <a href="#journey">Journey</a>
+  <a href="#work">Work</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero__grid">
+    <div class="hero__copy">
+      <div class="hero__avatar" data-handles>
+        <span class="hero__avatar-status"><i></i>Open to internships</span>
+      </div>
+      <p class="eyebrow">// portfolio · mathura, up</p>
+      <h1 class="hero__title">
+        Falguni Jain builds
+        <span class="hero__role-wrap">interfaces that <span class="hero__role" id="roleText">work.</span></span>
+      </h1>
+      <p class="hero__sub">
+        A Computer Science student at GLA University who codes in React and Node, then goes back and moves every pixel in Figma until it feels right. I like projects where "it works" and "it's beautiful" are the same requirement.
+      </p>
+      <div class="hero__cta">
+        <a href="#work" class="btn btn--primary">See the work</a>
+        <a href="#contact" class="btn btn--ghost">Get in touch</a>
+      </div>
+      <div class="hero__meta">
+        <span>fjain080@gmail.com</span>
+        <span class="dot-sep">·</span>
+        <a href="https://github.com/falguni2533" target="_blank" rel="noopener">github.com/falguni2533</a>
+      </div>
+    </div>
+
+    <div class="hero__stage">
+      <div class="frame" data-handles>
+        <div class="frame__bar">
+          <span></span><span></span><span></span>
+          <span class="frame__bar-label">falguni-jain — design_system.fig</span>
+        </div>
+        <div class="frame__canvas">
+          <div class="mock-card mock-card--a">
+            <span class="mock-tag">component</span>
+            <div class="mock-line mock-line--60"></div>
+            <div class="mock-line mock-line--40"></div>
+          </div>
+          <div class="mock-card mock-card--b">
+            <span class="mock-tag">navbar</span>
+            <div class="mock-dots"><i></i><i></i><i></i></div>
+          </div>
+          <div class="mock-card mock-card--c">
+            <span class="mock-tag">button/primary</span>
+            <div class="mock-pill"></div>
+          </div>
+          <svg class="mock-cursor" viewBox="0 0 24 24" width="22" height="22">
+            <path d="M4 2 L20 12 L12.5 13.5 L16 20.5 L13 22 L9.5 15 L4 19 Z" fill="currentColor"/>
+          </svg>
+          <div class="mock-avatar" data-handles>
+            <span class="mock-avatar-ring">
+              <img src="/assets/falguni.png" alt="Falguni Jain" />
+            </span>
+          </div>
+        </div>
+      </div>
+      <p class="hero__caption">.</p>
+    </div>
+  </div>
+  <div class="hero__scroll">
+    <span>scroll</span>
+    <span class="hero__scroll-line"></span>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="section-head">
+    <p class="eyebrow">01 · about</p>
+    <h2>Two disciplines, one habit of finishing things.</h2>
+  </div>
+  <div class="about__grid">
+    <div class="about__text">
+      <p>I'm currently in my B.Tech in Computer Science and Engineering at <strong>GLA University, Mathura</strong>, graduating 2028. Most of what I know beyond the classroom came from an internship at <strong>Baoiam Innovations</strong>, where I sat at the intersection of two roles: Full-Stack Development Intern and UI/UX Lead Intern.</p>
+      <p>That split shows up in how I build. I wire up REST APIs and component logic in React and Node, but I don't consider a feature done until I've gone back through it in Figma, checked the spacing, and fixed whatever felt clumsy to use.</p>
+      <p>Outside of coursework, I make videos and design creatives for my college's GeeksforGeeks chapter — which mostly means I'm comfortable with Canva and CapCut too, not just VS Code.</p>
+    </div>
+    <div class="about__stats">
+      <div class="stat">
+        <span class="stat__num">5★</span>
+        <span class="stat__label">HackerRank<br>Problem Solving, Java</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num">100+</span>
+        <span class="stat__label">LeetCode Problems<br>Java and C++</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num">2028</span>
+        <span class="stat__label">B.Tech CSE<br>GLA University</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNEY / TIMELINE -->
+<section class="journey" id="journey">
+  <div class="section-head">
+    <p class="eyebrow">02 · journey</p>
+    <h2>Where the time went.</h2>
+  </div>
+  <ol class="timeline">
+    <li class="timeline__item">
+      <div class="timeline__date">2024 — 2028</div>
+      <div class="timeline__body">
+        <h3>B.Tech, Computer Science Engineering</h3>
+        <p class="timeline__org">GLA University, Mathura</p>
+        <p>Core coursework alongside self-directed front-end and full-stack projects.</p>
+      </div>
+    </li>
+    <li class="timeline__item">
+      <div class="timeline__date">2024</div>
+      <div class="timeline__body">
+        <h3>Intermediate</h3>
+        <p class="timeline__org">Aligarh</p>
+        <p>Finished intermediate schooling from Our lady fatima senior secondary school.</p>
+      </div>
+    </li>
+    <li class="timeline__item">
+      <div class="timeline__date">2022</div>
+      <div class="timeline__body">
+        <h3>High School</h3>
+        <p class="timeline__org">Aligarh</p>
+        <p>OLF.</p>
+      </div>
+    </li>
+  </ol>
+
+  <div class="internship-card" data-handles>
+    <div class="internship-card__top">
+      <span class="mock-tag">internship</span>
+      <span class="internship-card__co">Baoiam Innovations Pvt. Ltd.</span>
+    </div>
+    <h3>Full-Stack Development Intern · UI/UX Lead Intern</h3>
+    <ul class="internship-card__list">
+      <li>Built front-end features in React.js and worked with Node.js on the back end.</li>
+      <li>Led UI/UX tasks — wireframing pages and improving usability of existing flows.</li>
+      <li>Integrated REST APIs into front-end components end to end.</li>
+      <li>Collaborated closely with the team to ship features on schedule.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- WORK / PROJECTS -->
+<section class="work" id="work">
+  <div class="section-head">
+    <p class="eyebrow">03 · selected work</p>
+    <h2>Things I've shipped and things I'm still shipping.</h2>
+  </div>
+
+  <div class="work__grid">
+
+    <article class="project" data-handles>
+      <div class="project__preview project__preview--portfolio">
+        <div class="mini-browser">
+          <div class="mini-browser__dots"><i></i><i></i><i></i></div>
+          <div class="mini-browser__body">
+            <div class="mini-hero"></div>
+            <div class="mini-row">
+              <div class="mini-block"></div>
+              <div class="mini-block"></div>
+              <div class="mini-block"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project__body">
+        <div class="project__head">
+          <h3>Online Quiz system</h3>
+        </div>
+        <p>A fully responsive personal site that lets user practice quizzes built with React.js and express. Designed in Figma first — reusable components came out of that groundwork rather than being bolted on after.</p>
+        <div class="project__tags">
+          <span>React.js</span><span>Node.js</span><span>MongoDB</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="project" data-handles>
+      <div class="project__preview project__preview--shop">
+        <div class="mini-browser">
+          <div class="mini-browser__dots"><i></i><i></i><i></i></div>
+          <div class="mini-browser__body">
+            <div class="mini-grid">
+              <div class="mini-card"></div>
+              <div class="mini-card"></div>
+              <div class="mini-card"></div>
+              <div class="mini-card"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project__body">
+        <div class="project__head">
+          <h3>Game Shop Website</h3>
+          <span class="status-badge">in progress</span>
+        </div>
+        <p>An e-commerce style storefront in React.js — product listing grids, filtering, and a responsive layout, still being built out.</p>
+        <div class="project__tags">
+          <span>Express.js</span><span>E-commerce UI</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="project" data-handles>
+      <div class="project__preview project__preview--theme">
+        <div class="mini-browser mini-browser--split">
+          <div class="mini-browser__half mini-browser__half--light">
+            <span>light</span>
+          </div>
+          <div class="mini-browser__half mini-browser__half--dark">
+            <span>dark</span>
+          </div>
+        </div>
+      </div>
+      <div class="project__body">
+        <div class="project__head">
+          <h3>Light / Dark Mode Website</h3>
+        </div>
+        <p>Dynamic theme switching, built in vanilla JavaScript with no library doing the work — the same toggle logic you can try at the top of this page.</p>
+        <div class="project__tags">
+          <span>JavaScript</span><span>CSS Variables</span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills" id="skills">
+  <div class="section-head">
+    <p class="eyebrow">04 · toolkit</p>
+    <h2>What I build with.</h2>
+  </div>
+  <div class="skills__grid">
+    <div class="skills__col">
+      <h3>Technical</h3>
+      <div class="pill-row">
+        <span class="pill">Express.js</span>
+        <span class="pill">JavaScript</span>
+        <span class="pill">React.js</span>
+        <span class="pill">HTML</span>
+        <span class="pill">CSS</span>
+        <span class="pill">Node.js</span>
+        <span class="pill">MongoDB</span>
+        <span class="pill">Postman</span>
+      </div>
+    </div>
+    <div class="skills__col">
+      <h3>Professional</h3>
+      <div class="pill-row">
+        <span class="pill pill--alt">Communication</span>
+        <span class="pill pill--alt">Teamwork</span>
+        <span class="pill pill--alt">UI/UX Thinking</span>
+      </div>
+    </div>
+    <div class="skills__col">
+      <h3>Creative tools</h3>
+      <div class="pill-row">
+        <span class="pill pill--ghost">Figma</span>
+        <span class="pill pill--ghost">Canva</span>
+        <span class="pill pill--ghost">CapCut</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="cert-row">
+    <div class="cert" data-handles>
+      <span class="mock-tag">certified</span>
+      <p>Infosys — HTML, CSS &amp; JavaScript</p>
+    </div>
+    <div class="cert" data-handles>
+      <span class="mock-tag">in progress</span>
+      <p>React.js Certification</p>
+    </div>
+    <div class="cert" data-handles>
+      <span class="mock-tag">club</span>
+      <p>GeeksforGeeks — Creative &amp; Content Team</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="section-head">
+    <p class="eyebrow">05 · contact</p>
+    <h2>Let's discuss your next project.</h2>
+  </div>
+
+  <div class="contact__grid">
+    <div class="contact__info">
+      <p class="contact__sub">Open to internship opportunities and front-end / full-stack collaborations. Drop me a line — I read everything myself.</p>
+
+      <a href="mailto:fjain080@gmail.com" class="contact-card" data-handles>
+        <span class="contact-card__icon">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5 12 13 20.5 6.5"/></svg>
+        </span>
+        <span>
+          <span class="contact-card__label">Email me</span>
+          <span class="contact-card__value">fjain080@gmail.com</span>
+        </span>
+      </a>
+
+      <a href="https://linkedin.com/in/falguni-jain-0aa018332" target="_blank" rel="noopener" class="contact-card" data-handles>
+        <span class="contact-card__icon">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="7.5" y1="10" x2="7.5" y2="16.5"/><circle cx="7.5" cy="7" r="0.9" fill="currentColor" stroke="none"/><path d="M11.5 16.5v-4a2.2 2.2 0 0 1 4.4 0v4"/><line x1="11.5" y1="10" x2="11.5" y2="16.5"/></svg>
+        </span>
+        <span>
+          <span class="contact-card__label">Connect</span>
+          <span class="contact-card__value">linkedin.com/in/falguni-jain</span>
+        </span>
+      </a>
+
+      <div class="follow">
+        <span class="follow__label">Follow my work</span>
+        <div class="follow__icons">
+          <a href="https://github.com/falguni2533" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.5c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55v-2c-3.17.69-3.84-1.36-3.84-1.36-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.72-1.53-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.06-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.14 1.17a10.9 10.9 0 0 1 5.72 0c2.18-1.48 3.14-1.17 3.14-1.17.62 1.57.23 2.73.11 3.02.73.8 1.17 1.82 1.17 3.06 0 4.37-2.67 5.33-5.21 5.62.41.36.77 1.05.77 2.12v3.14c0 .3.21.66.79.55A10.52 10.52 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5Z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/falguni-jain-0aa018332" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.94 6 2.5 6S0 4.88 0 3.5 1.06 1 2.5 1s2.48 1.12 2.48 2.5ZM.24 8.25h4.5V23H.24V8.25ZM8.24 8.25h4.31v2.01h.06c.6-1.1 2.06-2.26 4.24-2.26 4.53 0 5.37 2.87 5.37 6.6V23h-4.5v-6.62c0-1.58-.03-3.6-2.24-3.6-2.24 0-2.58 1.68-2.58 3.48V23h-4.5V8.25Z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <form class="contact-form" id="contactForm" data-handles>
+      <div class="field">
+        <label for="cf-name">Full name</label>
+        <input id="cf-name" name="name" type="text" placeholder="Your name" required>
+      </div>
+      <div class="field">
+        <label for="cf-email">Email address</label>
+        <input id="cf-email" name="email" type="email" placeholder="you@example.com" required>
+      </div>
+      <div class="field">
+        <label for="cf-subject">Subject</label>
+        <input id="cf-subject" name="subject" type="text" placeholder="Project discussion">
+      </div>
+      <div class="field">
+        <label for="cf-message">Message</label>
+        <textarea id="cf-message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn--primary contact-form__submit">Send message</button>
+      <p class="contact-form__note" id="cfNote">Opens your email app with this filled in — I'll reply from there.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <span>Falguni Jain</span>
+  <span>Mathura, Uttar Pradesh</span>
+  <span>&copy; 2026</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
